@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Building Brno 2026 – You're Invited</title>
+  <meta name="description" content="You're invited to the Zebra team building on 21 October 2026 in Brno.">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --surface: #181b22;
+      --text: #f2f4f8;
+      --muted: #a3abba;
+      --accent: #ffc72c;
+      --accent-text: #111;
+      --border: #2a2f3a;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fa;
+        --surface: #ffffff;
+        --text: #14171d;
+        --muted: #5b6475;
+        --border: #e2e5eb;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+    header.hero {
+      position: relative;
+      overflow: hidden;
+      padding: 96px 0 80px;
+      text-align: center;
+      background:
+        repeating-linear-gradient(115deg, transparent 0 38px, rgba(255,199,44,.07) 38px 56px),
+        var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: .8rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      padding: 4px 14px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 4.2rem);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin-bottom: 16px;
+    }
+    h1 span { color: var(--accent); }
+    .lead {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--accent-text);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      transition: transform .15s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+
+    section { padding: 64px 0; }
+    h2 { font-size: 1.8rem; margin-bottom: 24px; }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .card .label {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .card .value { font-size: 1.5rem; font-weight: 700; }
+    .card .sub { color: var(--muted); font-size: .95rem; margin-top: 4px; }
+
+    .about p { color: var(--muted); max-width: 680px; margin-bottom: 16px; }
+    .about ul { list-style: none; display: grid; gap: 12px; max-width: 680px; margin-top: 8px; }
+    .about li {
+      padding-left: 28px;
+      position: relative;
+    }
+    .about li::before {
+      content: "";
+      position: absolute;
+      left: 0; top: .6em;
+      width: 14px; height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .contact .card { max-width: 480px; }
+    .contact a { color: var(--accent); }
+    .contact .name { font-size: 1.3rem; font-weight: 700; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">You're invited</span>
+      <h1>Zebra <span>Team Building</span><br>Brno 2026</h1>
+      <p class="lead">A day away from the desk to relax, play, and get to know your colleagues better. Save the date and join us!</p>
+      <a class="btn" href="#contact">Questions? Contact us</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h2>The essentials</h2>
+        <div class="facts">
+          <div class="card">
+            <div class="label">Date</div>
+            <div class="value"><time datetime="2026-10-21">21 October 2026</time></div>
+            <div class="sub">Wednesday</div>
+          </div>
+          <div class="card">
+            <div class="label">Place</div>
+            <div class="value">Brno</div>
+            <div class="sub">Czech Republic · exact venue to be confirmed</div>
+          </div>
+          <div class="card">
+            <div class="label">Who</div>
+            <div class="value">The whole team</div>
+            <div class="sub">Zebra colleagues</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap">
+        <h2>What to expect</h2>
+        <p>A relaxed day built around teamwork and fun, with no slides and no status meetings. The detailed programme will be shared closer to the date.</p>
+        <ul>
+          <li>Team activities and friendly competition</li>
+          <li>Time to chat with colleagues from other teams</li>
+          <li>Food, drinks, and good company</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Questions?</h2>
+        <div class="card">
+          <div class="label">Contact person</div>
+          <div class="name">Jane Doe</div>
+          <div class="sub">Team building organiser</div>
+          <p style="margin-top:12px">
+            <a href="mailto:jane.doe@zebra.com">jane.doe@zebra.com</a><br>
+            <a href="tel:+420000000000">+420 000 000 000</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Zebra Team Building · Brno · 21 October 2026</div>
+  </footer>
+
+</body>
+</html>
